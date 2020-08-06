@@ -40,15 +40,38 @@ const sortByNumber = function(arr) {
  *******************/
 //adding values
 
-const first = document.querySelectorAll("#double-d6-rolls-median");
-first[0].textContent=doubleSixes;
+const medianDouble6 = document.querySelectorAll("#double-d6-rolls-median");
+const meanDouble6 = document.querySelectorAll("#double-d6-rolls-mean");
+const modeDouble6 = document.querySelectorAll("#double-d6-rolls-mode");
+//
+const medianD6 = document.querySelectorAll("#d6-rolls-median");
+const meanD6 = document.querySelectorAll("#d6-rolls-mean");
+const modeD6 = document.querySelectorAll("#d6-rolls-mode");
 
-const second = document.querySelectorAll("#double-d6-rolls-mean");
-second[0].textContent=doubleSixes;
+//
+const medianD12 = document.querySelectorAll("#d12-rolls-mean");
+const meanD12 = document.querySelectorAll("#d12-rolls-median");
+const modeD12 = document.querySelectorAll("#d12-rolls-mode");
+//
+const medianD20 = document.querySelectorAll("#d20-rolls-mean");
+const meanD20 = document.querySelectorAll("#d20-rolls-median");
+const modeD20 = document.querySelectorAll("#d20-rolls-mode");
 
-const third = document.querySelectorAll("#double-d6-rolls-mode");
-third[0].textContent=doubleSixes;
+medianD20[0].textContent=doubleSixes;
+meanD20[0].textContent=doubleSixes;
+modeD20[0].textContent=doubleSixes;
 
+modeDouble6[0].textContent=doubleSixes;
+meanDouble6[0].textContent=doubleSixes;
+medianDouble6[0].textContent=doubleSixes;
+
+modeD6[0].textContent=doubleSixes;
+meanD6[0].textContent=doubleSixes;
+medianD6[0].textContent=doubleSixes;
+
+modeD12[0].textContent=doubleSixes;
+meanD12[0].textContent=doubleSixes;
+medianD12[0].textContent=doubleSixes;
 
 
 /*******************
@@ -94,10 +117,21 @@ for (const button of buttons) {
     twelves = [];
     twenties = [];
 
-    first[0].textContent=doubleSixes;
-    second[0].textContent=doubleSixes;
-    third[0].textContent=doubleSixes;
+    medianD20[0].textContent=doubleSixes;
+    meanD20[0].textContent=doubleSixes;
+    modeD20[0].textContent=doubleSixes;
 
+    modeDouble6[0].textContent=doubleSixes;
+    meanDouble6[0].textContent=doubleSixes;
+    medianDouble6[0].textContent=doubleSixes;
+
+    modeD6[0].textContent=doubleSixes;
+    meanD6[0].textContent=doubleSixes;
+    medianD6[0].textContent=doubleSixes;
+
+    modeD12[0].textContent=doubleSixes;
+    meanD12[0].textContent=doubleSixes;
+    medianD12[0].textContent=doubleSixes;
 
 }
   )
