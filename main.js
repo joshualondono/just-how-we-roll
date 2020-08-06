@@ -30,15 +30,15 @@ const sortByNumber = function(arr) {
 }
 
 /*******************
- * const doubleMedian = document.querySelectorAll("#double-d6-rolls-median");
- doubleMedian[0].textContent='test';
- doubleMedian.appendChild(document.createTextNode('Median'));
-
- const doubleMode = document.querySelectorAll("#double-d6-rolls-mode");
- doubleMode[0].textContent=doubleSixes;
- doubleMode.appendChild(document.createTextNode('Mode')); *
+ *  *
  *******************/
-//adding values
+//Queries
+const dice = document.querySelector("#d6-roll")
+const buttons = document.querySelectorAll("button")
+const dice4 = document.querySelector("#d20-roll")
+const dice3 = document.querySelector("#d12-roll")
+const dice2 = document.querySelector("#double-d6-roll-1")
+
 
 const medianDouble6 = document.querySelectorAll("#double-d6-rolls-median");
 const meanDouble6 = document.querySelectorAll("#double-d6-rolls-mean");
@@ -78,25 +78,22 @@ medianD12[0].textContent=doubleSixes;
  * EVENT LISTENERS *
  *******************/
 
- const dice4 = document.querySelector("#d20-roll")
+
  dice4.addEventListener('click', function(event) {
      dice4.style.backgroundColor = "red"
    })
 
 
-const dice3 = document.querySelector("#d12-roll")
    dice3.addEventListener('click', function(event) {
        dice3.style.backgroundColor = "blue"
      })
 
-const dice2 = document.querySelector("#double-d6-roll-1")
 const dice1 = document.querySelector("#double-d6-roll-2")
      dice2.addEventListener('click', function(event) {
          dice2.style.backgroundColor = "black"
          dice1.style.backgroundColor = "black"
        })
 
-const dice = document.querySelector("#d6-roll")
           dice.addEventListener('click', function(event) {
           dice.style.backgroundColor = "black"
 
@@ -108,7 +105,6 @@ const dice = document.querySelector("#d6-roll")
  * RESET FUNCTION *
  ******************/
 
-   const buttons = document.querySelectorAll("button")
 for (const button of buttons) {
   button.addEventListener('click', function(event) {
 
